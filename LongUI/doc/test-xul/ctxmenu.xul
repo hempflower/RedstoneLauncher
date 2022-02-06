@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+
+<window title="XUL Popups"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script>
+<![CDATA[
+
+]]>
+</script>
+
+
+    <menulist label="Selected" context="menu1">
+     <menupopup id="menu1">
+      <menuitem label="Normal"/>
+      <menuitem label="Selected" selected="true" />
+      <menuitem label="Disabled" disabled="true" />
+      <menuitem label="Checkbox" type="checkbox" />
+      <menuitem label="Checked"  type="checkbox" checked="true" />
+     </menupopup>
+    </menulist>
+
+<popupset>
+
+  <menupopup id="menu2">
+    <menuitem label="Normal"/>
+    <menuitem label="Selected" selected="true" />
+    <menuitem label="Disabled" disabled="true" />
+    <menuitem label="Checkbox" type="checkbox" />
+    <menuitem label="Checked"  type="checkbox" checked="true" />
+  </menupopup>
+
+  <popup id="contextpopup">
+   <menuitem label="This is a context popup" />
+  </popup>
+
+  <popup id="popupmenu">
+   <menuitem label="Pearl"   />
+   <menuitem label="Aramis"  />
+   <menuitem label="Yakima"  />
+  </popup>
+  
+  <tooltip id="moretip" orient="vertical" style="background-color: #33DD00;">
+    <label value="Click here to see more information"/>
+    <label value="Really!" style="color: red;"/>
+  </tooltip>
+
+</popupset>
+
+
+<vbox>
+  <button label="Simple" tooltiptext="A simple popup"/>
+  <button label="More" tooltip="moretip"/>
+</vbox>
+     <spacer flex="1" tooltiptext="tooltiptext = 'tooltiptext' "/>
+
+  <vbox flex="1" style="overflow: auto">
+
+   <groupbox orient="horizontal" >
+   <caption label="Context Popups"/>
+     <spacer flex="1" context="menu2"/>
+     <button flex="1" label="button here" tooltip="menu2" />
+   </groupbox>
+
+
+</vbox>
+
+</window>

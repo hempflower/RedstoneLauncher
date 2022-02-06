@@ -1,0 +1,53 @@
+.btn1 {
+    -moz-appearance: none;
+    background-clip: content-box;
+    background-color: red;
+    margin: 1em;
+    padding: 2em;
+    cursor: pointer;
+}
+
+
+button {
+    -moz-appearance: none;
+    background-size: 100% 400%;
+    background-repeat: no-repeat;
+    background-image: url(../images/btn.png);
+    transition: 0.5s;
+    border: 0
+}
+
+button:hover {
+    background-position: 0% 33.3%
+}
+
+button:active {
+    background-position: 0% 66.6%
+}
+
+.v1 {
+    background-color: red;
+}
+
+#hbox1{
+    background-color: green;
+}
+
+#slider_box1 {
+    background-color: red;
+}
+#slider_box1:active {
+    background-color: green;
+}
+
+
+#slider_box3 {
+    background-color: blue;
+}
+#slider_box3:active {
+    background-color: cyan;
+}
+
+.t:hover {
+  font-size: 30px;
+}

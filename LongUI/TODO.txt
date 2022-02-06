@@ -1,0 +1,106 @@
+﻿Drag/Drop
+
+ACCESSIBLE
+
+BOX add_child
+
+文本编辑框 避免上锁
+
+StartBasicAnimation 动画使用指针，避免上锁
+
+ScrollArea 取消 m_minScrollSize m_maxScrollSize?
+
+adjust_align
+
+新类 { box[image+label] } ?
+
+Update 排序 [ fitting->下到上 sizing->上到下 ]
+
+SetText 仅保留 View接口
+
+Appearance Set - Style Link - initialize ?
+
+修改基本参考座标为内容座标?
+
+富文本支持
+
+<progressmeter> 对接操作系统状态
+
+专用控件上下左右访问
+
+构建析构控件会阻塞渲染线程
+
+对于大型控件，不可视控件没有必要更新一些东西
+ 
+MinSizeChange [针对文本] 测试
+
+内部uisafe_cast ->简单META-FLAG判断
+
+TAB 会移动视口
+
+NODE偏移 vs 虚指针
+
+复杂控件弱引用全面消除
+ - [UIMenuList::m_pMenuPopup] 测试
+ - m_pHoster
+
+pod_hash OOM 处理 测试
+
+CUIWaiter单独测试?
+
+超过大部分(比如90%)渲染面积应该全渲染?
+
+Event_Initialize 时构造对象?
+
+还有部分控件没有实现
+
+bug.dmp
+
+Timer
+
+LUI_NO_SCRIPT
+
+------------------------------------------------------------------
+菜单应该像离开一样是进入一段时间就行, 不需要等待IDLE HOVER事件
+
+groupbox minsize
+
+ResourceList
+
+SSBlock::~SSBlock
+
+CUITimeCapsule*m_pLastEnd寻找比这个还要廉价的解决方法?
+
+CSS针对文件的缓存?避免多次解析?
+
+LUI_VECTOR_SIZE_USE_UINT32 让这个宏有用
+
+hash_base::find 优化
+
+OOM处理策略: 目前分配失败会释放旧数据
+
+资源管理器释放资源后缓存一段时间?
+
+Win10支持超过MAX_PATH路径?
+
+LongUI::GetEasyType?
+
+GUI事件持续触发(比如一直按住鼠标左键)?
+
+STYLE minsize拥有强制性?
+
+Init事件有一个HR的返回值?
+
+SimpAX: (ch == ' ') | (ch == '\t'); -> (ch == ' ') || (ch == '\t');
+
+SimpAX: 字节映射表使用每一位, 节约7倍
+
+安全检查 类printf 
+
+CUIString::fromLatin1
+
+异步加载?
+
+CSS border-width 属性
+只有当边框样式不是 none 时才起作用。
+如果边框样式是 none，边框宽度实际上会重置为 0

@@ -1,0 +1,112 @@
+button#button, #layout .button{
+    -moz-appearance: none;
+    transition-duration: 555ms;
+    transition-timing-function: ease-out;
+    /* transition-timing-function: 26; */
+    background-color: red;
+    background-color: blue;
+    margin-left: 2px;
+}
+
+#layout button {
+    font-family: KaiTi;
+    /* font-size: 30px; */
+    /* font-style: italic; */
+    /* font-weight: 600; */
+    /* color: cyan */
+}
+
+#layout button:hover {
+    background-color: yellow;
+    /* margin-left: 200px; */
+    font-family: Arial;
+    /* font-size: 30px; */
+    /* font-style: italic; */
+    /* font-weight: 600; */
+    /* color: cyan */
+}
+
+stack>button {
+    transition-duration: 555ms;
+    background-color: blue;
+    -webkit-text-stroke: 2px red;
+    left: 10;
+}
+
+stack>button:hover {
+    background-color: yellow;
+    /* -webkit-text-stroke-color: green; */
+    left: 300;
+}
+
+.border-image {
+    border-width: 4px 4px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 40px/10px;
+    background-color: cyan;
+    transition-timing-function: ease-out;
+    transition-duration: 200ms;
+}
+
+.border-image:hover {
+    border-radius: 40px
+}
+
+button.border-image {
+    -moz-appearance: none;
+    border-width: 27px;
+    border-image-source: url('../images/border.png');
+    border-image-slice: 33% fill;
+    border-image-repeat: space;
+}
+
+button.border-image:hover {
+    border-image-source: url('../images/border2.png');
+    border-image-slice: 33%;
+    border-width: 54px;
+}
+
+
+#layout button:active {
+    background-color: green
+}
+
+#bgimage {
+    -moz-appearance: none;
+    /* background-size: 60px; */
+    background-color: red;
+    margin: 2px 3px 4px;
+    padding: 10px;
+    border-width: 3px;
+    background-image: url('../images/25.png');
+    background-repeat: round;
+    /* background-origin: content-box */
+}
+
+#bgimage:hover {
+    background-repeat: space;
+}
+
+#bgimage:hover {
+    background-image: url('../images/26.png');
+}
+
+.imgButton {
+    -moz-appearance: none;  
+    border-width: 3px;
+    border-image-source: url(../images/btn1.png);
+    border-image-slice: 3 fill;
+}
+
+.imgButton:hover {
+    border-image-source: url(../images/btn2.png);
+}
+
+.imgButton:active {
+    border-image-source: url(../images/btn3.png);
+}
+
+.imgButton:disabled {
+    border-image-source: url(../images/btn0.png);
+}
