@@ -25,10 +25,10 @@ All XUL Periodic Table.exe is, is the xulrunner-stub.exe with an
 application icon injected into it using resourcehacker. The application 
 icon is easy to create using gimp, creating each layer of the image as 
 the different sizes of icon, and exporting the image as an icon. Use the 
-resource hacker to pull the appicon out of the exe and look at it in 
+resource hacker or Resource Cracker (https://www.pelock.com/products/resource-cracker) to pull the appicon out of the exe and look at it in 
 gimp. It's really easy to make. 
 
-http://angusj.com/resourcehacker/ 
+http://angusj.com/resourcehacker/ or Resource Cracker (https://www.pelock.com/products/resource-cracker) 
 http://www.gimp.org/tutorials/Creating_Icons/ 
 
 You can also create shortcuts to the bat files and modify the 
